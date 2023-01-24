@@ -55,12 +55,63 @@ users = {
 }
 
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
+
+#jonathan_twitter = users["Jonathan"] ["twitter"]
+#print(jonathan_twitter)
+
+print(users["Jonathan"]["twitter"])
+
 # 2. Get Erik's hometown
+
+print(users["Erik"]["home_town"])
+
 # 3. Get the list of Erik's lottery numbers
+
+print(users["Erik"]["lottery_numbers"])
+
+
 # 4. Get the species of Avril's pet Monty
+
+print(users["Avril"]["pets"][0]["species"])
+
 # 5. Get the smallest of Erik's lottery numbers
+
+eric_lottery = users["Erik"]["lottery_numbers"]
+eric_lottery.sort()   #sorts from smallest to largest? 
+print(eric_lottery)
+
+
 # 6. Return an list of Avril's lottery numbers that are even
+
+avril_lottery = users["Avril"]['lottery_numbers']
+print(avril_lottery)
+
+# def print_even_numbers(avril_lottery):
+#   even_numbers = []
+#   for number in avril_lottery:
+#     if number % 2 == 0:
+#       even_numbers.append(number)
+#   return even_numbers 
+
+
+
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
+
+eric_lottery.append(7)
+print(eric_lottery)
+
 # 8. Change Erik's hometown to Edinburgh
+
+users["Erik"] ["home_town"] = "Edinburgh"
+print(users["Erik"]["home_town"])
+
 # 9. Add a pet dog to Erik called "fluffy"
+
+users["Erik"]["pets"].append({"name": "fluffy", "species":"dog"})
+print(users["Erik"]["pets"])
+
+
+
 # 10. Add another person to the users dictionary
+users.update({"David" : {"twitter" :"Dave_01", "lottery_numbers" : [1,2,3,4,5]}, "home_town" : "glasgow"})
+print(users)
