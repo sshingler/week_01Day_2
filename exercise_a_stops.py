@@ -46,8 +46,8 @@ print(stops)
 
 #10 Print out all the stops using a for loop
 
-for x in stops:
-    print(x)
+for stop in stops:
+    print(stop)
     
 
 

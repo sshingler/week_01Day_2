@@ -45,7 +45,7 @@ for country in united_kingdom:
 
 total_population = 0
 
-for total_population in united_kingdom:
-   total_population += united_kingdom("population")
+for country in united_kingdom:
+   total_population += country["population"]
 
 print(total_population)
