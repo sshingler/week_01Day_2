@@ -9,6 +9,7 @@ print(stops)
 
 stops.insert(0, "Glasgow Queen Street")
 print(stops)
+
 #3. Add "Polmont" at the appropriate point (between "Falkirk High" and "Linlithgow")
 
 stops.insert(4, "Polmont")
